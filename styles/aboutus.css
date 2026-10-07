@@ -1,0 +1,223 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    background: #f3efe3;
+    color: #29231e;
+    font-family: Arial, sans-serif;
+    line-height: 1.5
+}
+
+.shipping {
+    height: 34px;
+    background: #ead0ce;
+    font-size: 11px;
+    padding: 9px 5%;
+    letter-spacing: .3px
+}
+
+.navbar {
+    min-height: 62px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    gap: 25px
+}
+
+.logo {
+    font-family: Georgia, serif;
+    font-size: 24px;
+    color: #17130f;
+    text-decoration: none
+}
+
+.nav-links,
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px
+}
+
+.nav-links a,
+.nav-actions a {
+    font-size: 13px;
+    color: #17130f;
+    text-decoration: none
+}
+
+.about-page {
+    max-width: 1320px;
+    margin: auto;
+    padding: 55px 5%
+}
+
+.story h1,
+.values h2 {
+    text-align: center;
+    font: 700 clamp(34px, 4vw, 55px)/1.1 Georgia, serif;
+    margin: 0 0 40px;
+    color: #66503b
+}
+
+.story-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    align-items: center
+}
+
+.story-grid img {
+    width: 100%;
+    aspect-ratio: 1.35;
+    object-fit: cover
+}
+
+.story-copy {
+    font-size: 15px
+}
+
+.values {
+    margin-top: 75px
+}
+
+.value-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px;
+    text-align: center
+}
+
+.value-grid article {
+    padding: 10px
+}
+
+.value-grid span {
+    font-size: 42px
+}
+
+.value-grid h3 {
+    font: 22px Georgia, serif
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:900px) {
+    .nav-links {
+        gap: 10px
+    }
+
+    .value-grid {
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    .about-page {
+        padding-top: 35px
+    }
+
+    .story-grid {
+        gap: 20px
+    }
+}
+
+@media(max-width:600px) {
+    .shipping {
+        font-size: 9px;
+        text-align: center
+    }
+
+    .navbar {
+        min-height: 58px;
+        padding: 0 18px
+    }
+
+    .nav-links {
+        display: none
+    }
+
+    .nav-actions span {
+        display: none
+    }
+
+    .logo {
+        font-size: 21px
+    }
+
+    .about-page {
+        padding: 35px 18px
+    }
+
+    .story h1,
+    .values h2 {
+        margin-bottom: 25px
+    }
+
+    .story-grid {
+        grid-template-columns: 1fr;
+        gap: 18px
+    }
+
+    .story-grid img {
+        aspect-ratio: 1.25
+    }
+
+    .story-copy {
+        font-size: 13px
+    }
+
+    .value-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px
+    }
+
+    .value-grid h3 {
+        font-size: 17px
+    }
+
+    .value-grid p {
+        font-size: 12px
+    }
+
+    
+
+    
+
+    
+
+    
+}
+
+@media(min-width:1800px) {
+    .about-page {
+        max-width: 1650px
+    }
+
+    .story-copy {
+        font-size: 18px
+    }
+
+    .value-grid h3 {
+        font-size: 26px
+    }
+
+    .value-grid p {
+        font-size: 16px
+    }
+}

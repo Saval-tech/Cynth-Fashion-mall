@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="#f7f1e8" name="theme-color" />
+    <title>CYNT — Clothing</title>
+
+    <link href="styles/index.css" rel="stylesheet" />
+    <link href="styles/clothing.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="styles/responsive-selects.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <div class="site">
+        <!--HEADER -->
+            <header class="site-header">
+
+        <!-- ANNOUNCEMENT BAR -->
+        <div class="announcement">
+
+            <span>
+                FREE SHIPPING OVER $150 — EXTENDED WITH 30 DAYS
+            </span>
+
+            <div class="announcement-right">
+
+                <!-- LANGUAGE -->
+                <div class="select-wrapper">
+
+                    <i class="fa-solid fa-earth-americas"></i>
+
+                    <select class="announcement-select" aria-label="Language">
+                        <optgroup label="Language">
+                            <option value="en" selected>English</option>
+                            <option value="fr">French</option>
+                            <option value="es">Spanish</option>
+                            <option value="de">German</option>
+                        </optgroup>
+                    </select>
+
+                    <i class="fa-solid fa-chevron-down select-arrow"></i>
+
+                </div>
+
+
+                <!-- CURRENCY -->
+                <div class="select-wrapper">
+
+                    <select class="announcement-select" aria-label="Currency">
+                        <optgroup label="Currency">
+                            <option value="usd" selected>$ USD</option>
+                            <option value="eur">€ EUR</option>
+                            <option value="gbp">£ GBP</option>
+                            <option value="ngn">₦ NGN</option>
+                        </optgroup>
+                    </select>
+
+                    <i class="fa-solid fa-chevron-down select-arrow"></i>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- NAVIGATION -->
+        <nav class="nav">
+
+            <!-- LEFT -->
+            <div class="nav-left">
+
+                <!-- MOBILE HAMBURGER -->
+                <button aria-label="Open menu" aria-expanded="false" class="site-mobile-menu" type="button">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <!-- NAV LINKS -->
+                <ul class="nav-links">
+
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="shop.html">Category</a>
+                    </li>
+
+                    <li>
+                        <a href="clothing.html">Clothing</a>
+                    </li>
+
+                    <li>
+                        <a href="bag.html">Bags</a>
+                    </li>
+
+                    <li>
+                        <a href="shoe.html">Shoes</a>
+                    </li>
+
+                    <li>
+                        <a href="accessories.html">Accessories</a>
+                    </li>
+
+                    <li>
+                        <a href="aboutus.html">Information</a>
+                    </li>
+
+                    <li>
+                        <a href="contactus.html">Contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- LOGO -->
+            <a class="logo" href="index.html">
+                CYNT
+            </a>
+
+
+            <!-- RIGHT -->
+            <div class="nav-actions">
+
+                <!-- SEARCH -->
+                <label class="search">
+
+                    <span>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+
+                    <input type="search" placeholder="Search">
+
+                </label>
+
+
+                <!-- WISHLIST -->
+                <a aria-label="Wishlist" href="aboutus.html">
+
+                    <i class="fa-regular fa-heart"></i>
+
+                </a>
+
+
+                <!-- CART -->
+                <a aria-label="Shopping bag" href="checkout.html">
+
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Cart
+
+                </a>
+
+
+                <!-- LOGIN -->
+                <a class="login" href="login.html">
+
+                    <i class="fa-solid fa-user"></i>
+                    Login
+
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+        <!--  MAIN -->
+        <main>
+            <!--CLOTHING HEADER -->
+            <section class="clothing-heading">
+                <div>
+                    <span class="eyebrow">The collection</span>
+                    <h1>Clothing</h1>
+                </div>
+                <span class="heading-arrow">⌃</span>
+            </section>
+            <!-- CLOTHING SHOP -->
+            <section class="clothing-shop">
+                <!-- FILTERS -->
+                <div class="clothing-filters">
+                    <div class="clothing-filter-group">
+                        <label for="category">Category</label>
+                        <select id="category">
+                            <option>Tops</option>
+                            <option>Dresses</option>
+                            <option>Trousers</option>
+                            <option>Knits</option>
+                        </select>
+                    </div>
+                    <div class="clothing-filter-group">
+                        <label for="size">Size</label>
+                        <select id="size">
+                            <option>Size</option>
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                        </select>
+                    </div>
+                    <div class="clothing-filter-group">
+                        <label for="color">Color</label>
+                        <select id="color">
+                            <option>Color</option>
+                            <option>White</option>
+                            <option>Brown</option>
+                            <option>Black</option>
+                            <option>Navy</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- PRODUCT AREA -->
+                <div class="clothing-products">
+                    <div class="clothing-product-grid">
+                        <!-- PRODUCT 1 -->
+                        <article class="clothing-product-card">
+                            <a class="clothing-product-image" href="product-details.html">
+                                <img alt="Silk Blend Blouse" src="images/cloth1.avif" />
+                            </a>
+                            <div class="clothing-product-details">
+                                <div>
+                                    <h3 style="font-size: 20PX">Silk Blend Blouse</h3>
+                                    <p style="font-size: 12PX">Women's collection</p>
+                                </div>
+                                <strong style="font-size: 12PX">$120</strong>
+                            </div>
+                        </article>
+                        <!-- PRODUCT 2 -->
+                        <article class="clothing-product-card">
+                            <a class="clothing-product-image" href="product-details.html">
+                                <img alt="Structured Blazer" src="images/clth2.avif" />
+                            </a>
+                            <div class="clothing-product-details">
+                                <div>
+                                    <h3 style="font-size: 20PX">Structured Blazer</h3>
+                                    <p style="font-size: 12PX">Tailoring</p>
+                                </div>
+                                <strong style="font-size: 12PX">$120</strong>
+                            </div>
+                        </article>
+                        <!-- PRODUCT 3 -->
+                        <article class="clothing-product-card">
+                            <a class="clothing-product-image" href="product-details.html">
+                                <img alt="Structured Skirt" src="images/cloth3.avif" />
+                            </a>
+                            <div class="clothing-product-details">
+                                <div>
+                                    <h3 style="font-size: 20PX">Structured Skirt</h3>
+                                    <p style="font-size: 12PX">Women's collection</p>
+                                </div>
+                                <strong style="font-size: 12PX">$140</strong>
+                            </div>
+                        </article>
+                        <!-- PRODUCT 4 -->
+                        <article class="clothing-product-card">
+                            <a class="clothing-product-image" href="product-details.html">
+                                <img alt="Structured Table" src="images/cloth4.avif" />
+                            </a>
+                            <div class="clothing-product-details">
+                                <div>
+                                    <h3 style="font-size: 20PX">Structured Knit</h3>
+                                    <p style="font-size: 12PX">Knits</p>
+                                </div>
+                                <strong style="font-size: 12PX">$160</strong>
+                            </div>
+                        </article>
+                        <!-- PRODUCT 5 -->
+                        <article class="clothing-product-card">
+                            <a class="clothing-product-image" href="product-details.html">
+                                <img alt="Silk Blend Knit" src="images/cloth5.avif" />
+                            </a>
+                            <div class="clothing-product-details">
+                                <div>
+                                    <h3 style="font-size: 20PX">Silk Blend Knit</h3>
+                                    <p style="font-size: 12PX">Women's collection</p>
+                                </div>
+                                <strong style="font-size: 12PX">$130</strong>
+                            </div>
+                        </article>
+                        <!-- PRODUCT 6 -->
+                        <article class="clothing-product-card">
+                            <a class="clothing-product-image" href="product-details.html">
+                                <img alt="Soft Knit" src="images/cloth 6.avif" />
+                            </a>
+                            <div class="clothing-product-details">
+                                <div>
+                                    <h3 style="font-size: 20PX">Soft Knit</h3>
+                                    <p style="font-size: 12PX">Essentials</p>
+                                </div>
+                                <strong style="font-size: 12PX">$130</strong>
+                            </div>
+                        </article>
+                        <!-- PRODUCT 7 -->
+                        <article class="clothing-product-card">
+                            <a class="clothing-product-image" href="product-details.html">
+                                <img alt="Structured Knit Easy" src="images/cloth8.avif" />
+                            </a>
+                            <div class="clothing-product-details">
+                                <div>
+                                    <h3 style="font-size: 20PX">Structured Knit Easy</h3>
+                                    <p style="font-size: 12PX">Knits</p>
+                                </div>
+                                <strong style="font-size: 12PX">$120</strong>
+                            </div>
+                        </article>
+                        <!-- PRODUCT 8 -->
+                        <article class="clothing-product-card">
+                            <a class="clothing-product-image" href="product-details.html">
+                                <img alt="Knit Land Knit" src="images/cloth9.avif" />
+                            </a>
+                            <div class="clothing-product-details">
+                                <div>
+                                    <h3 style="font-size: 20PX">Knit Land Knit</h3>
+                                    <p style="font-size: 12PX">Knits</p>
+                                </div>
+                                <strong style="font-size: 12PX">$120</strong>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- PAGINATION -->
+                    <div class="clothing-pagination">
+                        <a aria-label="Previous" href="#">‹</a>
+                        <a class="active" href="#">1</a>
+                        <a href="#">2</a>
+                        <a aria-label="Next" href="#">›</a>
+                    </div>
+                </div>
+            </section>
+            <!--  COMPLETE THE LOOK  -->
+            <section class="complete-look">
+                <div class="section-heading-small">
+                    <div>
+                        <span class="eyebrow">Styled together</span>
+                        <h2>Complete the look</h2>
+                    </div>
+                </div>
+                <div class="complete-look-grid">
+                    <article class="look-card">
+                        <div class="look-image">
+                            <img alt="Leather Watch" src="images/hand watch.avif" />
+                        </div>
+                        <div class="look-details">
+                            <span style="font-size: 20PX">Hand Leather Watch</span>
+                            <strong>$240</strong>
+                        </div>
+                    </article>
+                    <article class="look-card">
+                        <div class="look-image">
+                            <img alt="Structured Tote Bag" src="images/blue bag 1.avif" />
+                        </div>
+                        <div class="look-details">
+                            <span style="font-size: 20PX">Structured Tote Bag</span>
+                            <strong>$180</strong>
+                        </div>
+                    </article>
+                    <article class="look-card">
+                        <div class="look-image">
+                            <img alt="Suede Leather" src="images/blue shoe 1.avif" />
+                        </div>
+                        <div class="look-details">
+                            <span style="font-size: 20PX">Suede Leather</span>
+                            <strong>$120</strong>
+                        </div>
+                    </article>
+                    <article class="look-card">
+                        <div class="look-image">
+                            <img alt="Structured Tote" src="images/bag 13.webp" />
+                        </div>
+                        <div class="look-details">
+                            <span style="font-size: 20PX;">Structured Tote Bag</span>
+                            <strong>$170</strong>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <!-- NEWSLETTER -->
+        <!-- NEWSLETTER -->
+        <section class="shared-newsletter-section">
+            <section class="newsletter">
+        <span class="eyebrow">
+            A little extra
+        </span>
+        <h2>
+            Join &amp; Get 10% Off
+        </h2>
+        <p>
+            Sign up for first access to new collections,
+            private edits and quiet offers.
+        </p>
+        <form class="newsletter-form">
+            <input aria-label="Your email address" placeholder="Your email address" type="email" />
+            <button type="submit">
+                Join
+            </button>
+        </form>
+    </section>
+        </main>
+        <!--FOOTER -->
+    <!-- FOOTER -->
+    <section class="shared-footer-section">
+        <footer class="footer">
+
+          <h4>QUESTIONS</h4>
+          <a href="faq.html">Help center</a>
+
+
+          <div class="footer-grid">
+               <!-- COMPANY INFO -->
+               <div class="footer-column">
+                    <h4>Company info</h4>
+                    <a href="aboutus.html">About CYNT</a>
+                    <a href="#">Affiliate &amp; Influencer Program</a>
+                    <a href="contactus.html">Contact us</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Press</a>
+                    <a href="#">CYNT Sustainability Program</a>
+               </div>
+               <!-- CUSTOMER SERVICE -->
+               <div class="footer-column">
+                    <h4>Customer service</h4>
+                    <a href="#">Return and refund policy</a>
+                    <a href="#">Intellectual property policy</a>
+                    <a href="#">Shipping info</a>
+                    <a href="#">Report suspicious activity</a>
+                    <div class="footer-feature">
+                         <span class="feature-icon">◉</span>
+                         <span>Low stock item alerts</span>
+                    </div>
+                    <div class="footer-feature">
+                         <span class="feature-icon">◉</span>
+                         <span>Coupons &amp; offers</span>
+                    </div>
+               </div>
+               <!-- ABOUT -->
+               <div class="footer-column">
+                    <h4>About CYNT</h4>
+                    <a href="aboutus.html">Our story</a>
+                    <a href="aboutus.html">Quiet luxury</a>
+                    <a href="aboutus.html">Materials</a>
+                    <a href="aboutus.html">Journal</a>
+                    <a href="#">Store locator</a>
+               </div>
+               <!-- SUPPORT -->
+               <div class="footer-column">
+                    <h4>Support</h4>
+                    <a href="faq.html">Help center</a>
+                    <a href="faq.html">Order tracking</a>
+                    <a href="faq.html">Size guide</a>
+                    <a href="faq.html">Accessibility</a>
+               </div>
+          </div>
+          <!-- SECURITY + PAYMENT-->
+          <div class="footer-extra">
+               <!-- SECURITY -->
+               <div class="footer-extra-column">
+                    <h4>Security certification</h4>
+                    <div class="footer-icons">
+                         <div class="footer-icon">
+                              <img alt="Visa" src="images/security 1.avif" />
+                         </div>
+                         <div class="footer-icon">
+                              <img alt="Mastercard" src="images/security 2.avif" />
+                         </div>
+                         <div class="footer-icon">
+                              <img alt="Security" src="images/security 3.avif" />
+                         </div>
+                         <div class="footer-icon">
+                              <img alt="PayPal" src="images/security 4.avif" />
+                         </div>
+                         <div class="footer-icon">
+                              <img alt="SSL Secure" src="images/security5.avif" />
+                         </div>
+                    </div>
+               </div>
+               <!-- PAYMENT -->
+               <div class="footer-extra-column">
+                    <h4>We accept:</h4>
+                    <div class="footer-icons">
+                         <div class="footer-icon">
+                              <img alt="Visa" src="images/visa.avif" />
+                         </div>
+                         <div class="footer-icon">
+                              <img alt="Mastercard" src="images/masrercard.avif" />
+                         </div>
+                         <div class="footer-icon">
+                              <img alt="American Express" src="images/g pay.avif" />
+                         </div>
+                         <div class="footer-icon">
+                              <img alt="Discover" src="images/mastercard 2.avif" />
+                         </div>
+                         <div class="footer-icon">
+                              <img alt="PayPal" src="images/jbc.avif" />
+                         </div>
+                         <div class="footer-icon">
+                              <img alt="Google Pay" src="images/discover.avif" />
+                         </div>
+
+                         <div class="footer-icon">
+                              <img alt="Stripe" src="images/amazon.avif" />
+                         </div>
+                         <div class="footer-icon">
+                              <img alt="Amazon Pay" src="images/opay.avif" />
+                         </div>
+                         <div class="footer-icon">
+                              <img alt="Visa" src="images/apple pay.avif" />
+                         </div>
+                    </div>
+               </div>
+          </div>
+          <!--FOOTER BOTTOM-->
+          <div class="footer-bottom">
+               <span>
+                    © 2022 - 2026 cynt Inc.
+               </span>
+               <a href="aboutus.html">Terms of Use</a>
+               <a href="aboutus.html">Privacy Policy</a>
+               <a href="aboutus.html">Intellectual Property Policy</a>
+               <span class="footer-language">
+                    <i class="fa-solid fa-earth-americas"></i> English
+               </span>
+          </div>
+     </footer>
+    </section>
+    </div>
+
+    <!-- MOBILE MENU SCRIPT -->
+    <script>
+        (() => {
+            const menuButton = document.querySelector(".site-mobile-menu");
+            const navLinks = document.querySelector(".nav-links");
+
+            if (!menuButton || !navLinks) return;
+
+            const closeMenu = () => {
+                navLinks.classList.remove("show");
+                menuButton.setAttribute("aria-expanded", "false");
+                menuButton.setAttribute("aria-label", "Open menu");
+                menuButton.innerHTML = '<i class="fa-solid fa-bars"></i>';
+            };
+
+            const openMenu = () => {
+                navLinks.classList.add("show");
+                menuButton.setAttribute("aria-expanded", "true");
+                menuButton.setAttribute("aria-label", "Close menu");
+                menuButton.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+            };
+
+            menuButton.addEventListener("click", () => {
+                if (navLinks.classList.contains("show")) closeMenu();
+                else openMenu();
+            });
+
+            navLinks.querySelectorAll("a").forEach(link => {
+                link.addEventListener("click", closeMenu);
+            });
+
+            document.addEventListener("keydown", event => {
+                if (event.key === "Escape") closeMenu();
+            });
+
+            window.addEventListener("resize", () => {
+                if (window.innerWidth > 700) closeMenu();
+            });
+        })();
+    </script>
+</body>
+
+</html>

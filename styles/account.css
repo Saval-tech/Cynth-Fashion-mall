@@ -1,0 +1,287 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    background: #f3efe3;
+    color: #29231e;
+    font: 14px Arial, sans-serif
+}
+
+.shipping {
+    background: #ead0ce;
+    padding: 9px 5%;
+    font-size: 11px
+}
+
+nav {
+    background: #fff;
+    min-height: 62px;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.logo {
+    font: 24px Georgia, serif;
+    color: #222;
+    text-decoration: none
+}
+
+.links {
+    display: flex;
+    gap: 22px
+}
+
+.links a,
+nav>a {
+    color: #222;
+    text-decoration: none;
+    font-size: 13px
+}
+
+main {
+    max-width: 1250px;
+    margin: auto;
+    padding: 65px 5% 90px
+}
+
+.account-grid {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 55px
+}
+
+aside h2 {
+    font: 20px Georgia, serif;
+    color: #66503b
+}
+
+aside a {
+    display: block;
+    color: #222;
+    text-decoration: none;
+    padding: 9px 0
+}
+
+aside .active {
+    font-weight: bold;
+    border-left: 2px solid #2c211a;
+    padding-left: 8px
+}
+
+.dashboard h1 {
+    font: 40px Georgia, serif;
+    color: #66503b;
+    margin: 0 0 25px
+}
+
+.quick {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 35px
+}
+
+.quick button,
+.orders a {
+    background: #2c211a;
+    color: #fff;
+    border: 0;
+    padding: 14px;
+    text-align: center
+}
+
+.dashboard h2 {
+    font: 25px Georgia, serif;
+    color: #66503b
+}
+
+.orders {
+    border: 1px solid #aaa;
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden
+}
+
+.orders>div {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 1fr 1fr 1.1fr;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 13px 14px
+}
+
+.orders>div:last-child {
+    border-bottom: 0
+}
+
+.orders .head {
+    background: #e9ddca;
+    font-weight: bold
+}
+
+.orders a {
+    text-decoration: underline;
+    background: none;
+    color: #222;
+    padding: 0
+}
+
+.mobile-menu {
+    display: none
+}
+
+
+
+
+
+@media(max-width:850px) {
+    .account-grid {
+        grid-template-columns: 1fr;
+        gap: 25px
+    }
+
+    aside {
+        display: none
+    }
+
+    .mobile-menu {
+        display: block;
+        margin-bottom: 25px
+    }
+
+    .mobile-menu select {
+        padding: 12px;
+        width: 180px;
+        background: #fff;
+        border: 1px solid #999
+    }
+
+    .quick {
+        grid-template-columns: repeat(3, 1fr)
+    }
+}
+
+@media(max-width:600px) {
+    .shipping {
+        text-align: center;
+        font-size: 9px
+    }
+
+    nav {
+        padding: 0 18px;
+        min-height: 58px
+    }
+
+    .links {
+        display: none
+    }
+
+    .logo {
+        font-size: 21px
+    }
+
+    main {
+        padding: 35px 18px 55px
+    }
+
+    .dashboard h1 {
+        text-align: center;
+        font-size: 30px
+    }
+
+    .quick {
+        grid-template-columns: 1fr;
+        gap: 8px
+    }
+
+    .quick button {
+        padding: 12px
+    }
+
+    .dashboard h2 {
+        font-size: 22px
+    }
+
+    .orders {
+        background: transparent;
+        border: 0;
+        display: grid;
+        gap: 10px
+    }
+
+    .orders>div {
+        grid-template-columns: 1fr 1fr;
+        padding: 14px;
+        background: #fff;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        gap: 9px;
+        font-size: 12px
+    }
+
+    .orders .head {
+        display: none
+    }
+
+    .orders>div span:nth-child(1)::before {
+        content: "Order #: ";
+        font-weight: bold
+    }
+
+    .orders>div span:nth-child(2)::before {
+        content: "Date: ";
+        font-weight: bold
+    }
+
+    .orders>div span:nth-child(3)::before {
+        content: "Status: ";
+        font-weight: bold
+    }
+
+    .orders>div span:nth-child(4)::before {
+        content: "Total: ";
+        font-weight: bold
+    }
+
+    .orders a {
+        text-align: right
+    }
+
+    .mobile-menu select {
+        width: 100%
+    }
+
+    
+
+    
+}
+
+@media(min-width:1800px) {
+    main {
+        max-width: 1500px
+    }
+
+    .dashboard h1 {
+        font-size: 48px
+    }
+
+    .orders {
+        font-size: 16px
+    }
+}
+/* Responsive select normalization */
+@media (max-width: 700px) {
+    .mobile-menu select {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        min-height: 40px;
+        height: 40px;
+        padding: 0 10px;
+        font-size: 13px;
+    }
+}

@@ -1,0 +1,62 @@
+/* RESPONSIVE SELECT CONTROLS */
+
+main select:not(.announcement-select),
+.mobile-menu select,
+.filters select,
+.clothing-filter-group select,
+.filter-group select,
+.sort-label select,
+.product-option select,
+.form-group select {
+    box-sizing: border-box;
+    max-width: 100%;
+    min-width: 0;
+}
+
+@media (max-width: 700px) {
+    main select:not(.announcement-select),
+    .mobile-menu select,
+    .filters select,
+    .clothing-filter-group select,
+    .filter-group select,
+    .sort-label select,
+    .product-option select,
+    .form-group select {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        min-height: 40px;
+        height: 40px;
+        padding: 0 10px;
+        font-size: 13px;
+        line-height: 1.2;
+        box-sizing: border-box;
+    }
+
+    /* Account's mobile selector should fill its available column,
+       rather than using a fixed 180px width. */
+    .mobile-menu {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .mobile-menu select {
+        display: block;
+    }
+}
+
+@media (max-width: 380px) {
+    main select:not(.announcement-select),
+    .mobile-menu select,
+    .filters select,
+    .clothing-filter-group select,
+    .filter-group select,
+    .sort-label select,
+    .product-option select,
+    .form-group select {
+        min-height: 38px;
+        height: 38px;
+        padding: 0 8px;
+        font-size: 12px;
+    }
+}

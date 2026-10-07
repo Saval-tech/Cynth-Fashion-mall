@@ -1,0 +1,492 @@
+main {
+    width: 100%;
+}
+
+
+/* CONFIRMATION */
+
+.confirmation-section {
+    width: min(850px, 90%);
+    margin: 45px auto 70px;
+    text-align: center;
+}
+
+.confirmation-icon {
+    width: 42px;
+    height: 42px;
+    margin: 0 auto 18px;
+    border: 2px solid #71624e;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #71624e;
+    font-size: 20px;
+}
+
+.confirmation-section h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(25px, 3vw, 37px);
+    font-weight: 500;
+    color: #6b5945;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+.order-number {
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+
+.confirmation-message {
+    font-size: 13px;
+    margin-bottom: 30px;
+}
+
+
+/* ORDER CONTENT */
+
+.order-content {
+    background: #fff;
+    min-height: 280px;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.shipping-details {
+    padding-right: 30px;
+    border-right: 1px solid #ddd;
+}
+
+.order-summary {
+    padding-left: 30px;
+}
+
+.order-content h2 {
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 18px;
+}
+
+.detail-group {
+    margin-bottom: 14px;
+}
+
+.detail-group h3 {
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+
+.detail-group p {
+    font-size: 12px;
+}
+
+.payment-method {
+    border-top: 1px solid #ddd;
+    padding-top: 17px;
+    margin-top: 18px;
+}
+
+
+/* SUMMARY */
+
+.summary-product {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 22px;
+}
+
+.summary-product h3 {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.summary-product p {
+    font-size: 11px;
+}
+
+.summary-product strong {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.summary-total {
+    border-top: 1px solid #ddd;
+    padding-top: 12px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+.delivery {
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+
+/* CONTINUE SHOPPING */
+
+.continue-shopping {
+    display: block;
+    width: 100%;
+    background: #24190f;
+    color: #fff;
+    margin-top: 15px;
+    padding: 12px;
+    font-size: 12px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.continue-shopping:hover {
+    background: #493421;
+}
+
+
+
+/* LARGE DESKTOP / 4K SCREENS */
+
+@media (min-width: 1600px) {
+
+    .top-bar,
+    .navbar {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .navbar {
+        min-height: 70px;
+    }
+
+    .nav-left {
+        gap: 28px;
+    }
+
+    .nav-left a {
+        font-size: 13px;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .nav-right {
+        gap: 20px;
+    }
+
+    .search-box {
+        width: 150px;
+        height: 34px;
+    }
+
+    .confirmation-section {
+        width: min(1100px, 82%);
+        margin-top: 70px;
+    }
+
+    .confirmation-section h1 {
+        font-size: 45px;
+    }
+
+    .order-content {
+        padding: 35px;
+    }
+
+    .complete-look {
+        width: min(1400px, 82%);
+    }
+
+    .look-card h3 {
+        font-size: 12px;
+    }
+
+    .look-card p {
+        font-size: 11px;
+    }
+
+    
+}
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+    .top-bar {
+        padding: 0 4%;
+    }
+
+    .navbar {
+        padding: 0 4%;
+        grid-template-columns: auto 1fr auto;
+    }
+
+    .nav-left {
+        gap: 12px;
+    }
+
+    .nav-left a {
+        font-size: 10px;
+    }
+
+    .search-box {
+        width: 85px;
+    }
+
+    .confirmation-section {
+        width: 92%;
+        margin-top: 35px;
+    }
+
+    .order-content {
+        padding: 20px;
+    }
+
+    .shipping-details {
+        padding-right: 20px;
+    }
+
+    .order-summary {
+        padding-left: 20px;
+    }
+
+    .complete-look {
+        width: 92%;
+    }
+
+    .look-products {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .look-card:last-child {
+        display: none;
+    }
+
+    
+}
+
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+
+    .top-bar {
+        min-height: 27px;
+        padding: 0 15px;
+        font-size: 7px;
+    }
+
+    .top-options {
+        display: none;
+    }
+
+
+    /* MOBILE NAV */
+
+    .navbar {
+        padding: 12px 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .logo {
+        order: 1;
+        width: 100%;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .nav-left {
+        order: 2;
+        width: 100%;
+        justify-content: center;
+        gap: 12px;
+        overflow-x: auto;
+        scrollbar-width: none;
+    }
+
+    .nav-left::-webkit-scrollbar {
+        display: none;
+    }
+
+    .nav-left a {
+        font-size: 9px;
+        white-space: nowrap;
+    }
+
+    .nav-right {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .search-box {
+        width: 130px;
+        height: 27px;
+    }
+
+    .nav-right>a span {
+        display: none;
+    }
+
+
+    /* CONFIRMATION */
+
+    .confirmation-section {
+        width: 92%;
+        margin: 30px auto 45px;
+    }
+
+    .confirmation-icon {
+        width: 38px;
+        height: 38px;
+        font-size: 17px;
+    }
+
+    .confirmation-section h1 {
+        font-size: 24px;
+        line-height: 1.2;
+    }
+
+    .order-number {
+        font-size: 12px;
+    }
+
+    .confirmation-message {
+        font-size: 11px;
+        margin-bottom: 20px;
+    }
+
+
+    /* ORDER CONTENT */
+
+    .order-content {
+        grid-template-columns: 1fr;
+        padding: 18px;
+        text-align: left;
+    }
+
+    .shipping-details {
+        padding-right: 0;
+        padding-bottom: 20px;
+        border-right: 0;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .order-summary {
+        padding-left: 0;
+        padding-top: 20px;
+    }
+
+    .order-content h2 {
+        font-size: 15px;
+    }
+
+    .detail-group h3,
+    .detail-group p {
+        font-size: 11px;
+    }
+
+    .summary-product h3,
+    .summary-product p {
+        font-size: 11px;
+    }
+
+    .summary-total {
+        font-size: 14px;
+    }
+
+    .delivery {
+        font-size: 11px;
+    }
+
+
+    /* COMPLETE LOOK */
+
+    .complete-look {
+        width: 92%;
+        margin-bottom: 45px;
+    }
+
+    .look-products {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+
+    .look-card:last-child {
+        display: block;
+    }
+
+    .look-card h3 {
+        font-size: 9px;
+    }
+
+    .look-card p {
+        font-size: 8px;
+    }
+
+
+    /* NEWSLETTER */
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+    /* FOOTER */
+
+    
+
+    
+
+}
+
+
+/* SMALL MOBILE */
+
+@media (max-width: 400px) {
+
+    .nav-left {
+        gap: 9px;
+    }
+
+    .nav-left a {
+        font-size: 8px;
+    }
+
+    .search-box {
+        width: 110px;
+    }
+
+    .confirmation-section h1 {
+        font-size: 21px;
+    }
+
+    .order-content {
+        padding: 14px;
+    }
+
+    .look-products {
+        gap: 5px;
+    }
+
+    
+
+}
